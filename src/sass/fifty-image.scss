@@ -1,0 +1,66 @@
+@import "variables";
+
+.fifty-container {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    display: inline-block;
+    padding-bottom: .6rem;
+  }
+  &.bottom-border {
+    border-bottom: 1px solid #E7E5E4;
+    @media (max-width: 768px) {
+      border: none;
+    }
+  }
+  .left {
+    width: 100%;
+    max-width: 100vw;
+    margin-right: 20px;
+    color: $dark-color;
+  }
+  .right {
+    width: 100%;
+    margin: auto;
+    max-width: 100vw;
+    img {
+      max-width: 612px;
+    }
+  }
+}
+.sm-text {
+  padding: .5rem;
+  font-family: $font-family-sans;
+  font-size: calc(0.5rem + 1vw);
+  color: $grey-color;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  @media (max-width: 768px) {
+    padding: .7rem;
+    font-size: calc(0.8rem + 1vw);
+  }
+}
+.md-text {
+  padding: .5rem 1rem .5rem .5rem;
+  font-size: calc(1.1rem + 1vw);
+  line-height: 150%;
+  letter-spacing: -0.25px;
+  @media (max-width: 768px) {
+    padding: .7rem;
+    font-size: calc(.9rem + 1vw);
+    line-height: 200%;
+    letter-spacing: -0.18px;
+  }
+}
+.lg-text {
+  padding: .5rem;
+  font-size: calc(1.5rem + 3vw);
+  line-height: 110%;
+  letter-spacing: 1px;
+  @media (max-width: 768px) {
+    padding: .7rem;
+    font-size: 1.8rem;
+  }
+}

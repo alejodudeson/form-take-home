@@ -1,0 +1,30 @@
+@import "variables";
+
+html, body {
+  margin: 0;
+  font-family: $font-family;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+main {
+  margin: calc(2.5rem + 57px) 1.5rem;
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+}
+.d-lg-none {
+  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.d-sm-none {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+

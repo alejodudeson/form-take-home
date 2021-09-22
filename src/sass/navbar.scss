@@ -1,0 +1,85 @@
+@import "variables";
+
+header {
+  left: 0;
+  width: 100%;
+  min-height: 57px;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+}
+.navbar {
+  padding-top: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1280px;
+  background: $light-bg;
+  .container {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+}
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  button {
+    padding: 0.5rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey-color;
+    background: none;
+    border: none;
+  }
+  .menu-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+.navbar-menu {
+  display: none;
+  align-items: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  background: $dark-bg;
+  transition: all 0.6s ease-out;
+  .navbar-nav {
+    margin-left: auto;
+    flex-direction: row;
+    display: block;
+    padding-left: 0;
+    width: 100%;
+    list-style: none;
+    > li {
+      > a {
+        font-family: $font-family-sans;
+        font-size: clamp(1.2rem, .5rem + 2vw, 2rem);
+        color: $light-color;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem;
+        &:hover {
+          color: $grey-color;
+        }
+      }
+      &.active {
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
